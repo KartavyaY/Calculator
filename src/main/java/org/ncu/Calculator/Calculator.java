@@ -26,10 +26,10 @@ public class Calculator {
     public void compute(String operation, double first , double second){
 
         switch (operation) {
-            case "add" -> additionService.operate(first, second);
-            case "subtract" -> subtractionService.operate(first,second);
-            case "multiply" -> multiplicationService.operate(first,second);
-            case "divide" -> divisionService.operate(first,second);
+            case "a" -> additionService.operate(first, second);
+            case "s" -> subtractionService.operate(first,second);
+            case "m" -> multiplicationService.operate(first,second);
+            case "d" -> divisionService.operate(first,second);
         }
 
     }

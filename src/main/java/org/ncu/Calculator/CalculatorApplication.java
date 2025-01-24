@@ -12,12 +12,18 @@ public class CalculatorApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(CalculatorApplication.class, args);
 		Calculator calculator = context.getBean(Calculator.class);
+
 		while(true){
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Enter operation: add, subtract, divide, multiply: ");
+		System.out.print("Enter operation or \"none\" : \n\"a\" for add \n\"s\" for subtract \n\"d\" for divide \n\"m\" for multiply: ");
 
 		String operation = sc.nextLine();
+
+		if(operation.equals("none")){
+			System.out.println("Thank you for using this calculator");
+			break;
+		}
 
 		System.out.print("enter first number: ");
 		double a = sc.nextDouble();
