@@ -14,6 +14,7 @@ public class CalculatorApplication {
 		Calculator calculator = context.getBean(Calculator.class);
 
 		while(true){
+			
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Enter operation or \"none\" : \n\"a\" for add \n\"s\" for subtract \n\"d\" for divide \n\"m\" for multiply: ");
