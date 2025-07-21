@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class CalculatorApplication {
 
 	public static void main(String[] args) {
-		
 		ApplicationContext context = SpringApplication.run(CalculatorApplication.class, args);
 		Calculator calculator = context.getBean(Calculator.class);
 
